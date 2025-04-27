@@ -60,7 +60,7 @@ def draw_board(root):
 def set_on_board(raw_list):
     set_list = []
     for i in range(0, len(raw_list), ROW_SIZE):
-        set_list.append(raw_list[i : i + ROW_SIZE])
+        set_list.append(raw_list[i: i + ROW_SIZE])
     return set_list
 
 
@@ -92,7 +92,7 @@ def change_label(buttons, row, col, answers, root, default_image, start_time):
                     title="Success!", message="Time: " + str(time_passed) + " sec"
                 )
                 # TODO: Montrer un écran de victoire au lieu de recommencer
-                # Code à utiliser : show_victory(root)
+                show_victory(root)
                 buttons[row][col].after(1000, draw_board, root)
         else:
             buttons[row][col].after(
