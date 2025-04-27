@@ -20,7 +20,7 @@ def choose_mode():
 2. Si les deux cartes sont identiques, elle resteront face visibles.
 3. Sinon elles seront masquées.
 4. Le jeu se termine lorsque toutes les cartes sont visibles.
-5. A new game starts automatically.
+5. A victory screen appears.
 6. Press ENTER to change mode.
 7. Press ESCAPE to exit.
         """,
@@ -70,7 +70,8 @@ def choose_level():
         width="15",
         height="5",
         bg="alice blue",
-        command=lambda rows=2, cols=2: clicked(rows, cols, level_root, chosen_level),
+        command=lambda rows=2, cols=2: clicked(
+            rows, cols, level_root, chosen_level),
     )
     lvl0.pack(side=LEFT)
     lvl1 = Button(
@@ -78,7 +79,8 @@ def choose_level():
         width="15",
         height="5",
         bg="alice blue",
-        command=lambda rows=3, cols=4: clicked(rows, cols, level_root, chosen_level),
+        command=lambda rows=3, cols=4: clicked(
+            rows, cols, level_root, chosen_level),
     )
     lvl1.pack(side=LEFT)
     lvl2 = Button(
@@ -86,7 +88,8 @@ def choose_level():
         width="15",
         height="5",
         bg="lavender blush",
-        command=lambda rows=4, cols=6: clicked(rows, cols, level_root, chosen_level),
+        command=lambda rows=4, cols=6: clicked(
+            rows, cols, level_root, chosen_level),
     )
     lvl2.pack(side=LEFT)
     # TODO: Ajouter un mode très difficile
