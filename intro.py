@@ -20,9 +20,9 @@ def choose_mode():
 2. Si les deux cartes sont identiques, elle resteront face visibles.
 3. Sinon elles seront masquées.
 4. Le jeu se termine lorsque toutes les cartes sont visibles.
-5. A victory screen appears.
-6. Press ENTER to change mode.
-7. Press ESCAPE to exit.
+5. Un écran de victoire apparaît
+6. Appuyer sur Entrée pour changer de mode
+7. Appuyer sur Échap pour quitter
         """,
         width="60",
         bg="misty rose",
@@ -92,8 +92,9 @@ def choose_level():
             rows, cols, level_root, chosen_level),
     )
     lvl2.pack(side=LEFT)
-    # TODO: Ajouter un mode très difficile
-    # lvl3 = Button(
+    
+
+    #lvl3 = Button(
     #     text="DIFFICILE",
     #     width="15",
     #     height="5",
